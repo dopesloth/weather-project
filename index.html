@@ -14,29 +14,40 @@
     <div class="weather-app">
       <header>
         <form class="search-bar">
-          <input type="search" placeholder="Search for a city" required />
-          <input type="submit" value="Search" class="submit-button" />
+          <input
+            type="search"
+            placeholder="Search for a city"
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1><strong>Tokyo</strong></h1>
-          <p>Monday 08:00</p>
-          <p>Humidity: <strong>50%</strong>, Wind: <strong>10 mph</strong></p>
-        </div>
-        <div class="current-temp">
-          <h2>☀️60°F</h2>
-          <p>Sunny</p>
+        <div class="weather-data">
+          <div>
+            <h1 class="current-city"><strong>Tokyo</strong></h1>
+            <p class="current-time-condition">
+              Monday, 08:00
+              <br />
+              Humidity: <strong>50%</strong>, Wind: <strong>10 mph</strong>
+            </p>
+          </div>
+          <div class="current-temp-emoji">
+            ☀️
+            <p class="current-temp">
+              <strong>60°F</strong>
+              <span class="condition-type">Sunny</span>
+            </p>
+          </div>
         </div>
       </main>
       <footer>
-        Coded by
-        <a href="https://github.com/dopesloth" target="_blank">Celine Chen</a>
-        and is on
+        This project was coded by
+        <a href="https://github.com/dopesloth" target="_blank">Celine Chen</a>,
+        is open-sourced on
         <a href="https://github.com/dopesloth/weather-project" target="_blank"
           >Github</a
-        >
-        and hosted on
+        >, and hosted on
         <a href="https://hey-whats-the-weather.netlify.app" target="_blank"
           >Netlify</a
         >.
