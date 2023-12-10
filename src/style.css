@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(32, 32, 53);
+  color: rgb(252, 251, 249);
+  font-family: "Oxygen", sans-serif;
+}
+
+.weather-app {
+  background-color: rgb(246, 246, 255);
+  color: rgb(58, 58, 164);
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 8px 0px rgba(71, 49, 153, 0.08);
+  border: 1px solid;
+}

@@ -3,37 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How's the Weather?s</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>How's the Weather?</title>
   </head>
   <body>
-    <header>
-      <form class="search-bar">
-        <input type="search" placeholder="Search for a city" required />
-        <input type="submit" value="Search" class="submit-button" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1><strong>Tokyo</strong></h1>
-        <p>Monday 08:00</p>
-        <p>Humidity: <strong>50%</strong>, Wind: <strong>10 mph</strong></p>
-      </div>
-      <div class="current-temp">
-        <h2>☀️60°F</h2>
-        <p>Sunny</p>
-      </div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/dopesloth" target="_blank">Celine Chen</a> and
-      is on
-      <a href="https://github.com/dopesloth/weather-project" target="_blank"
-        >Github</a
-      >
-      and hosted on
-      <a href="https://hey-whats-the-weather.netlify.app" target="_blank"
-        >Netlify</a
-      >.
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search-bar">
+          <input type="search" placeholder="Search for a city" required />
+          <input type="submit" value="Search" class="submit-button" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1><strong>Tokyo</strong></h1>
+          <p>Monday 08:00</p>
+          <p>Humidity: <strong>50%</strong>, Wind: <strong>10 mph</strong></p>
+        </div>
+        <div class="current-temp">
+          <h2>☀️60°F</h2>
+          <p>Sunny</p>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/dopesloth" target="_blank">Celine Chen</a>
+        and is on
+        <a href="https://github.com/dopesloth/weather-project" target="_blank"
+          >Github</a
+        >
+        and hosted on
+        <a href="https://hey-whats-the-weather.netlify.app" target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
   </body>
 </html>
