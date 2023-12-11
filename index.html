@@ -13,11 +13,12 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-bar">
+        <form class="search-form">
           <input
             type="search"
             placeholder="Search for a city"
             class="search-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-button" />
         </form>
@@ -25,7 +26,7 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="current-city"><strong>Tokyo</strong></h1>
+            <h1 class="current-city" id="city"><strong>Tokyo</strong></h1>
             <p class="current-time-condition">
               Monday, 08:00
               <br />
@@ -53,5 +54,6 @@
         >.
       </footer>
     </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
