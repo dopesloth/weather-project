@@ -44,6 +44,7 @@ header {
 .weather-data {
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 main {
@@ -53,34 +54,41 @@ main {
 .current-city {
   font-size: 50px;
   font-weight: bolder;
-  margin: 15px 0;
-  line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .current-time-condition {
   color: rgb(117, 117, 211);
-  line-height: 20px;
+  margin-top: 0;
 }
 
 .current-time-condition strong {
   color: rgb(58, 58, 164);
 }
 
-.current-temp-emoji {
+.temp-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   font-size: 50px;
 }
+
 .current-temp {
   display: flex;
   flex-direction: column;
   font-size: 50px;
-  margin: 15px 0 0 10px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.current-temp-emoji {
+  margin-right: 10px;
 }
 
 .condition-type {
   font-size: 30px;
-  text-align: center;
+  text-align: right;
 }
 
 footer {

@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>How's the Weather?</title>
   </head>
   <body>
@@ -26,19 +27,18 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="current-city" id="city"><strong>Tokyo</strong></h1>
+            <h1 class="current-city" id="city"><strong></strong></h1>
             <p class="current-time-condition">
               Monday, 08:00
               <br />
               Humidity: <strong>50%</strong>, Wind: <strong>10 mph</strong>
             </p>
           </div>
-          <div class="current-temp-emoji">
-            ☀️
-            <p class="current-temp">
-              <strong>60°F</strong>
-              <span class="condition-type">Sunny</span>
-            </p>
+          <div class="temp-container">
+            <div class="current-temp" id="temp-now"></div>
+            <div class="condition-type">
+              <span class="current-temp-emoji">☀️</span>Sunny
+            </div>
           </div>
         </div>
       </main>
