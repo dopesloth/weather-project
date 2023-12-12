@@ -82,13 +82,18 @@ main {
   margin-bottom: 5px;
 }
 
-.current-temp-emoji {
-  margin-right: 10px;
+.condition-type {
+  display: flex;
+  justify-content: space-between;
 }
 
-.condition-type {
-  font-size: 30px;
-  text-align: right;
+.weather-app-icon {
+  width: 65px;
+  height: 65px;
+}
+
+.current-description {
+  font-size: 40px;
 }
 
 footer {
