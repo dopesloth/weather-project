@@ -87,12 +87,13 @@ main {
 }
 
 .weather-app-icon {
-  width: 65px;
-  height: 65px;
+  width: 75px;
+  height: 75px;
 }
 
 .current-description {
   font-size: 40px;
+  padding-top: 7px;
 }
 
 .weather-forecasts {
@@ -114,6 +115,8 @@ main {
 
 .forecast-icon {
   display: inline-block;
+  width: 50px;
+  height: 50px;
 }
 
 .weather-forecast-temp {
