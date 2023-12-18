@@ -20,14 +20,20 @@ header {
   padding: 0px 0px 30px 0px;
 }
 
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
 .search-input {
   background-color: white;
   padding: 15px 20px;
   border: none;
-  width: 80%;
+  width: 78%;
   font-size: 20px;
   border-radius: 7px;
   color: rgb(32, 32, 53);
+  font-family: "Oxygen", sans-serif;
 }
 
 .search-button {
@@ -36,9 +42,9 @@ header {
   font-family: "Oxygen", sans-serif;
   padding: 15px 30px;
   border-radius: 7px;
-  font-size: 16px;
+  font-size: 18px;
   border: none;
-  margin-left: 5px;
+  width: 20%;
 }
 
 .weather-data {
