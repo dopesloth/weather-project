@@ -98,9 +98,10 @@ main {
 .weather-forecasts {
   display: flex;
   justify-content: space-around;
+  margin-top: 10px;
 }
 
-.weather-forecast {
+.weather-forecast-day {
   display: flex;
   flex-direction: column;
   text-align: center;
