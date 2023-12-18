@@ -17,7 +17,8 @@ function refreshTemp(response) {
   temperatureElement.innerHTML =
     Math.round(response.data.temperature.current) + "°F";
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
-  console.log(response.condition.icon_url);
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -56,7 +57,16 @@ function searchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "c8e21939ob5bfbb2ea332t339f450f8b";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+  axios(apiUrl).then(displayForecast);
+  console.log(apiUrl);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHTML = "";
 
